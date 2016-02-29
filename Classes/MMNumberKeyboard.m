@@ -140,7 +140,7 @@ static const CGFloat MMNumberKeyboardPadSpacing = 8.0f;
     
     UIButton *doneButton = [_MMNumberKeyboardButton keyboardButtonWithStyle:MMNumberKeyboardButtonStyleDone];
     [doneButton.titleLabel setFont:doneButtonFont];
-    [doneButton setTitle:UIKitLocalizedString(@"OK") forState:UIControlStateNormal];
+    [doneButton setTitle:@"OK" forState:UIControlStateNormal];
     
     [buttonDictionary setObject:doneButton forKey:@(MMNumberKeyboardButtonDone)];
     
@@ -400,7 +400,7 @@ static const CGFloat MMNumberKeyboardPadSpacing = 8.0f;
 
 - (NSString *)defaultReturnKeyTitle
 {
-    return UIKitLocalizedString(@"Done");
+    return @"OK";
 }
 
 - (void)setReturnKeyButtonStyle:(MMNumberKeyboardButtonStyle)style
