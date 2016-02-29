@@ -768,6 +768,7 @@ NS_INLINE CGRect MMButtonRectMake(CGRect rect, CGRect contentRect, UIUserInterfa
 
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
+    AudioServicesPlaySystemSound(0x450);
     BOOL begins = [super beginTrackingWithTouch:touch withEvent:event];
     const NSTimeInterval continuousPressTimeInterval = self.continuousPressTimeInterval;
     
